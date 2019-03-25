@@ -14,7 +14,6 @@ const GeoSchema = new Schema({
 });
 
 
-
 // create ninja Schema & model
 const NinjaSchema = new Schema({
     name:{
