@@ -9,6 +9,8 @@ const app = express();
 mongoose.connect('mongodb://localhost/ninjago');
 mongoose.Promise = global.Promise; //mongo's Promise is deprecated
 
+app.use(express.static('public'));
+
 // body parser must come first over other uses
 // so we can catch and use the data
 app.use(bodyParser.json());
